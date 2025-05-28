@@ -46,7 +46,7 @@ So, we can get any str with:
 ```
 But, it is so difficult, or impossible to find the way to get "c" with only symbols. (that's why i made this repo, i need your help)<br>
 ```py
-# idk is these will be useful, but here's something could make "c":
+# idk are these will be useful, but here's something could make "c":
 
 type("") => str
 type("")(type("")) => str(str) => "<class 'str'>"
