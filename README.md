@@ -45,6 +45,18 @@ So, we can get any str with:
 "%c"%(+("+">"")+("+">"")+("+">"")+...)
 ```
 But, it is so difficult, or impossible to find the way to get "c" with only symbols. (that's why i made this repo, i need your help)<br>
+```py
+# idk is these will b useful, but here's something could make "c":
+
+type("") => str
+type("")(type("")) => str(str) => "<class 'str'>"
+type("")(type(""))[1] => "c"
+# You have to get type function, str function or <class 'str'> with only symbols.
+
+# or, you can use octal escape
+"\143" => "c"
+# But it's useless because you have to eval this, getting eval function is way too hard
+```
 Now, we got strs, so its time to execute them!
 ```py
 exec("%c"%(+("+">"")+("+">"")+("+">"")+...))
